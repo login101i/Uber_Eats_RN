@@ -9,12 +9,12 @@ import { View } from "react-native";
 import { Flex, Text } from "../../../../components";
 
 const SearchBar = ({ cityHandler }) => {
-	let googleApi = "AIzaSyAcqc5ZJPlN2y0LGqIlsGkYVxJ0Boudj-0";
+	let googleApi = "apiKeyFromGooglePlatform-0";
 	return (
 		<Flex>
 			<GooglePlacesAutocomplete
 				placeholder="Search"
-				query={{ key: "AIzaSyAcqc5ZJPlN2y0LGqIlsGkYVxJ0Boudj" }}
+				query={{ key: "googleApi" }}
 				onPress={(data, details = null) => {
 					console.log(data.description);
 					const city = data.description.split(",")[0];
